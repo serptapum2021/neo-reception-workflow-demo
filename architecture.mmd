@@ -1,0 +1,6 @@
+flowchart LR
+  A[Incoming request] --> B[Classification]
+  B --> C[Availability and constraints]
+  C --> D{Safe assignment?}
+  D -->|yes| E[Assign]
+  D -->|no| F[Escalate to human]
